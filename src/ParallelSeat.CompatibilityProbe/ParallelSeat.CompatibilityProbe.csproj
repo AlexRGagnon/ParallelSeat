@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>ParallelSeat.CompatibilityProbe</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+    <ProjectReference Include="..\..\adapters\ParallelSeat.Adapters.Abstractions\ParallelSeat.Adapters.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>ParallelSeat.Host</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParallelSeat.Core\ParallelSeat.Core.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Automation\ParallelSeat.Automation.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Win32Provider\ParallelSeat.Win32Provider.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Overlay\ParallelSeat.Overlay.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Protocol\ParallelSeat.Protocol.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Ipc\ParallelSeat.Ipc.csproj" />
+  </ItemGroup>
+</Project>

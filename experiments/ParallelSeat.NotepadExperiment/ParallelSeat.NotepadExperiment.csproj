@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>ParallelSeat.NotepadExperiment</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ParallelSeat.Core\ParallelSeat.Core.csproj" />
+    <ProjectReference Include="..\..\src\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+    <ProjectReference Include="..\..\src\ParallelSeat.Automation\ParallelSeat.Automation.csproj" />
+  </ItemGroup>
+</Project>

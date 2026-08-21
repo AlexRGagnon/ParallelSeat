@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ParallelSeat.Cli</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParallelSeat.Ipc\ParallelSeat.Ipc.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Protocol\ParallelSeat.Protocol.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>ParallelSeat.Win32Provider</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParallelSeat.Core\ParallelSeat.Core.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+  </ItemGroup>
+</Project>

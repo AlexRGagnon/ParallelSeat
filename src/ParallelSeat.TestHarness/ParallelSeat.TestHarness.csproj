@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <UseWPF>true</UseWPF>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace>ParallelSeat.TestHarness</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ParallelSeat.Windows\ParallelSeat.Windows.csproj" />
+    <ProjectReference Include="..\ParallelSeat.Core\ParallelSeat.Core.csproj" />
+  </ItemGroup>
+</Project>

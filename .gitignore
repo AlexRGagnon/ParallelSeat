@@ -1,0 +1,57 @@
+## .NET
+bin/
+obj/
+[Bb]uild/
+[Ll]og/
+[Ll]ogs/
+*.user
+*.userosscache
+*.suo
+*.cache
+*.dll
+*.exe
+*.pdb
+*.nupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.rsuser
+*.sln.docstates
+.vscode/*
+!.vscode/extensions.json
+
+## OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+## Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+## ParallelSeat local
+*.log
+local/
+secrets/
+*.pipe-token

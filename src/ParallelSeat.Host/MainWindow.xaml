@@ -1,0 +1,14 @@
+﻿<Window x:Class="ParallelSeat.Host.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ParallelSeat Host"
+        Height="360" Width="640">
+  <DockPanel Margin="12">
+    <StackPanel DockPanel.Dock="Top" Orientation="Horizontal">
+      <Button x:Name="EmergencyStopButton" Content="Emergency Stop" Padding="12,6" Click="EmergencyStopButton_Click"/>
+      <Button x:Name="RefreshButton" Content="Refresh" Margin="8,0,0,0" Padding="12,6" Click="RefreshButton_Click"/>
+    </StackPanel>
+    <TextBox x:Name="DiagnosticsText" Margin="0,12,0,0" IsReadOnly="True"
+             FontFamily="Consolas" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+  </DockPanel>
+</Window>

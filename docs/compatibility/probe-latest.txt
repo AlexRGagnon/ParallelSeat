@@ -1,0 +1,25 @@
+Executable: C:\Program Files\WindowsApps\Microsoft.WindowsNotepad_11.2606.15.0_x64__8wekyb3d8bbwe\Notepad\Notepad.exe
+PID: 18852
+Tier: B_FullUiAutomation
+Framework: Win32
+RequiresForeground: False
+Elevated: False
+Protected: False
+Patterns:
+  - ExpandCollapse
+  - Invoke
+  - ItemContainer
+  - Scroll
+  - ScrollItem
+  - Selection
+  - SelectionItem
+  - Text
+  - Toggle
+  - Transform
+  - Value
+  - VirtualizedItem
+  - Window
+Notes:
+  - Top-level windows: 1
+  - Stable AutomationIds observed.
+  - Many elements lack native HWNDs (windowless).
