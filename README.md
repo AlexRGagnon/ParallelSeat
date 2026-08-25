@@ -32,7 +32,25 @@ pwsh -File .\scripts\Install-AgentHost.ps1
 # → %LOCALAPPDATA%\ParallelSeat\bin\ParallelSeat.Cli.exe
 ```
 
-The Cursor skill **windows-ui-control** (`~/.cursor/skills/windows-ui-control/`) prefers that bin, starts Host **headless** via `ui.ps1 ps-ensure`, and stops it with `ps-stop` when the last skill-managed lease ends.
+## windows-ui-control skill (Cursor / Codex)
+
+Skill source lives in `skills/windows-ui-control/`. Install on this machine:
+
+```powershell
+pwsh -File .\scripts\Install-WindowsUiControlSkill.ps1 -InstallHost -WriteConfigLocal
+```
+
+Portable zip for another computer (includes pre-built Host+Cli; no SDK on target):
+
+```powershell
+pwsh -File .\scripts\Package-WindowsUiControlSkill.ps1 -BundleBinaries
+# → dist/windows-ui-control-package.zip
+
+# On target: extract, then:
+pwsh -File .\Install-WindowsUiControlSkill.ps1 -UseBundledBinaries
+```
+
+The Cursor skill **windows-ui-control** (`~/.cursor/skills/windows-ui-control/`) prefers LocalAppData bin, starts Host **headless** via `ui.ps1 ps-ensure`, and stops it with `ps-stop` when the last skill-managed lease ends.
 
 ```powershell
 $ui = "$env:USERPROFILE\.cursor\skills\windows-ui-control\scripts\ui.ps1"
